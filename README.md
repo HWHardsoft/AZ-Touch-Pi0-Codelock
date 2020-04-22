@@ -58,7 +58,7 @@ sudo ./demo
 ``` 
 
 ## Touch demo
-![AZ-Touch Pi0](https://user-images.githubusercontent.com/3049858/79955903-b58f4580-847f-11ea-8a44-0ffad80f72f7.jpg)
+![AZ-Touch Pi0](https://user-images.githubusercontent.com/3049858/79959822-dc9c4600-8484-11ea-991b-66f1f0bbc7b9.jpg)
 
 ### compilation:
 
