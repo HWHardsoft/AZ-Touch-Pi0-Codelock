@@ -27,35 +27,51 @@ sudo raspi-config
 
 ### compilation:
 
-
 ```bash
-cd rpi
-cc -o touch touch.c fontx.c ili9340.c xpt2046.c -lbcm2835 -lm -DBCM
+cd ili9340spi_rpi
+cc -o keypad keypad.c fontx.c ili9340.c xpt2046.c -lbcm2835 -lm -DBCM
 ``` 
-### start the program
+
+sudo ./### start the program:
 
 ```bash
-cd rpi
-./keypad
+cd ili9340spi_rpi
+sudo ./keypad
 ``` 
 
 
 ## TFT demo
+![AZ-Touch Pi0](https://user-images.githubusercontent.com/3049858/79955903-b58f4580-847f-11ea-8a44-0ffad80f72f7.jpg)
 
 ### compilation:
 
+```bash
+cd ili9340spi_rpi
+cc -o demo demo.c fontx.c ili9340.c -lbcm2835 -lm -DBCM
+```
+
+### start the program
 
 ```bash
-cd rpi
+cd ili9340spi_rpi
+sudo ./demo
+``` 
+
+## Touch demo
+![AZ-Touch Pi0](https://user-images.githubusercontent.com/3049858/79955903-b58f4580-847f-11ea-8a44-0ffad80f72f7.jpg)
+
+### compilation:
+
+```bash
+cd ili9340spi_rpi
 cc -o touch touch.c fontx.c ili9340.c xpt2046.c -lbcm2835 -lm -DBCM
 ``` 
 ### start the program
 
 ```bash
-cd rpi
-./demo
+cd ili9340spi_rpi
+sudo ./touch
 ``` 
-
 
 # License
 
