@@ -6,7 +6,7 @@ Simple Keypad / codelock example in C for [AZ-Touch Pi0](https://www.hwhardsoft.
 
 # Installation
 
-1. Download the [latest release](https://drive.google.com/open?id=1fyo7i7ajvh9Jw3eJMkq-weTJ9HY11tWT)
+1. Download the [latest release](https://drive.google.com/open?id=1_beZlYkJhw8RBsQLvLswldTQ4vi18hNs)
 2. Unzip the downloaded file
 3. Write the image to your SD card. See [here](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) for details.
 4. Boot your Raspberry Pi and wait for start.
