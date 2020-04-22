@@ -25,24 +25,36 @@ sudo raspi-config
 
 ## Keypad example
 
-###compilation:
+### compilation:
 
 
 ```bash
 cd rpi
-sudo raspi-config
+cc -o touch touch.c fontx.c ili9340.c xpt2046.c -lbcm2835 -lm -DBCM
 ``` 
-
-for tft demo:
-
-
-## compilation
+### start the program
 
 ```bash
 cd rpi
-sudo raspi-config
+./keypad
 ``` 
 
+
+## TFT demo
+
+### compilation:
+
+
+```bash
+cd rpi
+cc -o touch touch.c fontx.c ili9340.c xpt2046.c -lbcm2835 -lm -DBCM
+``` 
+### start the program
+
+```bash
+cd rpi
+./demo
+``` 
 
 
 # License
