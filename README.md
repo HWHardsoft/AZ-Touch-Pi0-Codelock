@@ -1,6 +1,6 @@
 # AZ-Touch-Pi0-Codelock
 
-Simple Keypad / codelock example for [AZ-Touch Pi0](https://www.hwhardsoft.de/english/projects/az-touch-pi0) wall mount touch screen (ili9341 display) with Pi Zero. This project based on the [Raspberry-ili9340spi](https://github.com/nopnop2002/Raspberry-ili9340spi) project by [nopnop2002](https://github.com/nopnop2002) and contains a set of demo programs to test the touch and tft also.
+Simple Keypad / codelock example in C for [AZ-Touch Pi0](https://www.hwhardsoft.de/english/projects/az-touch-pi0) wall mount touch screen (ili9341 display) with Pi Zero. This project based on the [Raspberry-ili9340spi](https://github.com/nopnop2002/Raspberry-ili9340spi) project by [nopnop2002](https://github.com/nopnop2002) and contains a set of demo programs to test the touch and tft also.
 
 ![AZ-Touch Pi0](https://user-images.githubusercontent.com/3049858/79955903-b58f4580-847f-11ea-8a44-0ffad80f72f7.jpg)
 
