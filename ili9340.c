@@ -42,9 +42,11 @@
 
 #include "ili9340.h"
 
-#define D_C  2  // GPIO2=Pin#3
-#define RES  3  // GPIO3=Pin#5
+#define D_C  22  // GPIO22=Pin#15
+#define RES  17  // GPIO17=Pin#11
 #define C_S  8  // GPIO8=Pin#24
+#define BeepPin 19 // GPIO19
+#define LED 18 // GPIO18
 
 #define _DEBUG_   0
 
@@ -212,6 +214,9 @@ void lcdInit(int width, int height, int offsetx, int offsety){
 void lcdReset(void){
   bcm2835_gpio_fsel(D_C,BCM2835_GPIO_FSEL_OUTP); // D/C
   bcm2835_gpio_fsel(RES,BCM2835_GPIO_FSEL_OUTP); // Reset
+  bcm2835_gpio_fsel(LED,BCM2835_GPIO_FSEL_OUTP); // LED
+  bcm2835_gpio_fsel(BeepPin,BCM2835_GPIO_FSEL_OUTP); // Beeper
+  
   //bcm2835_gpio_write(D_C, HIGH);
 
   bcm2835_gpio_write(RES, LOW);

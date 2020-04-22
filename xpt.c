@@ -14,12 +14,12 @@ int main (int argc, char **argv){
   int	pen_irq;
 
   if (bcm2835_init() != 1) return 1;
-  bcm2835_gpio_fsel(RPI_V2_GPIO_P1_22,BCM2835_GPIO_FSEL_INPT);
+  bcm2835_gpio_fsel(RPI_V2_GPIO_P1_18,BCM2835_GPIO_FSEL_INPT);
 
   for (;;) {
     usleep(10000);	/* do it anyway ; settle time when pen goes up */
-    pen_irq = bcm2835_gpio_lev(RPI_V2_GPIO_P1_22);
-    if (pen_irq == LOW)	{ /* P1.22 == PenIRQ is LOW : touch! pen is down */
+    pen_irq = bcm2835_gpio_lev(RPI_V2_GPIO_P1_18);
+    if (pen_irq == LOW)	{ /* P1.18 == PenIRQ is LOW : touch! pen is down */
       xptGetxy(T_CS, &x, &y);
       printf("touch !! x=%5d y=%5d\n", x, y);
     } else { /* pen is up */

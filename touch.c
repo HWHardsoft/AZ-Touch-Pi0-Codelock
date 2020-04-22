@@ -139,15 +139,15 @@ if(_DEBUG_)printf("ReadTFTConfig:screenWidth=%d height=%d\n",screenWidth, screen
   int pen_irq;
   int id;
 
-  bcm2835_gpio_fsel(RPI_V2_GPIO_P1_22,BCM2835_GPIO_FSEL_INPT);
+  bcm2835_gpio_fsel(RPI_V2_GPIO_P1_13,BCM2835_GPIO_FSEL_INPT);
 
   xpos = 40;
   ypos = (screenHeight-1)-(32*1);
   color = RED;
   for (;;) {
     usleep(10000);      /* do it anyway ; settle time when pen goes up */
-    pen_irq = bcm2835_gpio_lev(RPI_V2_GPIO_P1_22);
-    if (pen_irq == LOW) { /* P1.22 == PenIRQ is LOW : touch! pen is down */
+    pen_irq = bcm2835_gpio_lev(RPI_V2_GPIO_P1_13);
+    if (pen_irq == LOW) { /* P1.18 == PenIRQ is LOW : touch! pen is down */
       id = xptGetPoint(T_CS, &tinfo);
       if (id != -1) {
 if(_DEBUG_)printf("id=%d\n",id);
