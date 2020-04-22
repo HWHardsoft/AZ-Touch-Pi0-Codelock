@@ -41,7 +41,7 @@ sudo ./keypad
 
 
 ## TFT demo
-![AZ-Touch Pi0](https://user-images.githubusercontent.com/3049858/79955903-b58f4580-847f-11ea-8a44-0ffad80f72f7.jpg)
+![AZ-Touch Pi0](https://user-images.githubusercontent.com/3049858/79959814-dad28280-8484-11ea-9319-92bc764a6ddd.jpg)
 
 ### compilation:
 
