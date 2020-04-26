@@ -33,7 +33,7 @@
 
 #define BeepPin 19
 #define T_CS BCM2835_SPI_CS1
-#define _DEBUG_ 0
+#define _DEBUG_ 1
 
 TouchInfo tinfo;
 
@@ -119,7 +119,10 @@ void draw_BoxNButtons(void)
       else lcdDrawUTF8String(fx32G, 206 - (80*i), 130 + (60*j), utf, WHITE);
 	  
 	  // define touch screen fields
-	  xptSetPoint(&tinfo, 240 - (80*i),160 + (60*j),160 - (80*i), 100 + (60*j), utf[0]);
+	  // for displays with black header uncomment this line:
+	  //xptSetPoint(&tinfo, 240 - (80*i),160 + (60*j),160 - (80*i), 100 + (60*j), utf[0]);  
+	  // for displays with yellow header uncomment this line:
+	  xptSetPoint(&tinfo, 80*i, 240 - (60*j),80 + (80*i), 180 - (60*j), utf[0]);
       xptDump(&tinfo);
     }
   }

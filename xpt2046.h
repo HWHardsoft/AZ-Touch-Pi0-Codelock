@@ -18,8 +18,12 @@ typedef struct {
   TouchPoint tps[MAXTP];
 } TouchInfo;
 
+// black header:
+//#define XRATE 133
+//#define YRATE  94
+//yellow header:
 #define XRATE 133
-#define YRATE  94
+#define YRATE 120
 #define DTMAX 800000 // 800m sec
 
 int xptGetit(int cmd);
